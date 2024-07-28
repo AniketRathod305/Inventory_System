@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>All products</h1>
+
+    <table>
+      {%for i in range(0,z)%}
+      <tr>
+        <td>{{res[i].product_id}}</td>
+        <td>{{res[i].product_name}}</td>
+        <td>{{res[i].company_name}}</td>
+        <td>{{res[i].cprice}}</td>
+        <td>{{res[i].sprice}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+  </body>
+</html>
